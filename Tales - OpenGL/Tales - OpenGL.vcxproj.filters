@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Camera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle.cpp">
+      <Filter>Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Cell.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Field.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Cursor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle.h">
+      <Filter>Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Cell.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Field.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Cursor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{990fab52-a85b-44ba-9f3a-81934f34a7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Battle">
+      <UniqueIdentifier>{67784967-fc40-418d-8769-4444bf1ce8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{40f1d8bc-b612-4053-842a-eb04d88898d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{afd50722-1c29-4d38-bf6e-4660fa6bca25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Player">
+      <UniqueIdentifier>{d425672f-5540-483f-b112-53fd18842cba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
