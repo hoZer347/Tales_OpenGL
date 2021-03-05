@@ -13,5 +13,6 @@ Cell::Cell(glm::vec3 v) {
 }
 
 void Cell::render() {
+	if (unit) unit->render();
 	square.render();
 }

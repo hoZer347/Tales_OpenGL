@@ -11,6 +11,8 @@
 
 class Object {
 public:
+	void operator+=(glm::vec3);
+	void operator-=(glm::vec3);
 
 	void render();
 

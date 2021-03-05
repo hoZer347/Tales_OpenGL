@@ -38,7 +38,7 @@ public:
 	glm::mat3x3 yaw;
 	glm::mat3x3 pitch;
 
-	float speed = 0.09;
+	float speed = 0.09f;
 
 	Cursor cursor;
 };

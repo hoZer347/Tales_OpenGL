@@ -29,7 +29,15 @@
     <ClCompile Include="Plane.cpp">
       <Filter>Geometry</Filter>
     </ClCompile>
-    <ClCompile Include="Cursor.cpp" />
+    <ClCompile Include="Cursor.cpp">
+      <Filter>Cursor</Filter>
+    </ClCompile>
+    <ClCompile Include="Unit.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Sprite.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Camera.h">
@@ -59,7 +67,15 @@
     <ClInclude Include="Plane.h">
       <Filter>Geometry</Filter>
     </ClInclude>
-    <ClInclude Include="Cursor.h" />
+    <ClInclude Include="Cursor.h">
+      <Filter>Cursor</Filter>
+    </ClInclude>
+    <ClInclude Include="Unit.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Sprite.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Camera">
@@ -77,5 +93,11 @@
     <Filter Include="Player">
       <UniqueIdentifier>{d425672f-5540-483f-b112-53fd18842cba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Cursor">
+      <UniqueIdentifier>{efa74aef-6bda-453c-abda-7cd1c336046a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Anna.png" />
   </ItemGroup>
 </Project>

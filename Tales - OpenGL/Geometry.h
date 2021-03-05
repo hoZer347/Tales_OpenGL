@@ -29,5 +29,7 @@ public:
 
 	glm::vec3 v_color = { 1, 1, 1 };
 	glm::vec3 f_color = { 1, 0, 0 };
+
+	GLuint* vertexBuffer;
 };
 

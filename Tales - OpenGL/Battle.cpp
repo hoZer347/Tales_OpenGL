@@ -5,13 +5,21 @@ Battle::Battle() {
     window = glfwCreateWindow(640, 640, "Tales - OpenGL", NULL, NULL);
     if (!window) {  glfwTerminate(); exit(EXIT_FAILURE); }
 
+    glfwWindowHint(GLFW_SAMPLES, 4);
+    glEnable(GL_MULTISAMPLE);
+
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
     // Making it the focused window for glfw
     glfwMakeContextCurrent(window);
 
-    // Enabling Depth ordering
+    // Enabling openGL to do stuff
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_BLEND);
+    glEnable(GL_TEXTURE_2D);
+    glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    glAlphaFunc(GL_GREATER, 0.5);
+    glEnable(GL_ALPHA_TEST);
 
     // Initializing glew
     if (glewInit() != GLEW_OK)
@@ -23,7 +31,14 @@ Battle::Battle() {
     input_default();
 
     // Testing stuff to be removed
+    Unit* u = new Unit("Anna");
+    Sprite* sprite = new Sprite("Anna");;
+    field->add_unit(u, 2, 2);
+    sprites["Anna1"] = sprite;
 
+    sprite = new Sprite("Anna");
+    *sprite += glm::vec3(0, 0, 1);
+    sprites["Anna2"] = sprite;
     //
 }
 
@@ -32,8 +47,6 @@ Battle::~Battle() {
 }
 
 void Battle::init() {
-    int age = 0;
-
     // Main game loop
     while (!glfwWindowShouldClose(window)) {
         double start_time = glfwGetTime();
@@ -61,7 +74,8 @@ void Battle::init() {
 
         field->render();
 
-        age++;
+        for (auto& s : sprites)
+            s.second->render();
 
         inputs();
 

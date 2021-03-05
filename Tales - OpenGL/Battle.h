@@ -12,7 +12,7 @@
 
 #include <functional>
 
-#include <list>
+#include <map>
 #include <vector>
 
 #include "Object.h"
@@ -20,14 +20,19 @@
 #include "Player.h"
 #include "Camera.h"
 #include "Cursor.h"
+#include <ios>
 
 #include "math.h"
+#include <fstream>
+#include <sstream>
+#include <String>
 
 class Battle {
 public:
 	Battle();
 	~Battle();
 
+	void load_shaders();
 	void init();
 
 	// Input processing
@@ -44,10 +49,13 @@ private:
 	Player player;
 	Camera cam;
 
-	Field* field = new Field(16, 16);
+	Field* field = new Field(32, 32);
+
+	GLuint shader, vertexBuffer;
 
 	double mx = 0, my = 0;
 
+	std::map<std::string, Sprite*> sprites;
 	std::vector<Object*> objects;
 };
 

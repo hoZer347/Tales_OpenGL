@@ -7,6 +7,7 @@ public:
 	Field(int=32, int=32);
 	~Field();
 
+	void add_unit(Unit*, int, int);
 	glm::vec3 at(glm::vec3);
 
 	void render();

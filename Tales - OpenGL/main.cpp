@@ -1,5 +1,3 @@
-// Polygun uwu
-
 #include "Battle.h"
 
 int main() {
@@ -10,6 +8,7 @@ int main() {
     game.init();
     
     glfwTerminate();
+
     exit(EXIT_SUCCESS);
 
     return 0;

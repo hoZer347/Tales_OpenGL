@@ -2,6 +2,7 @@
 
 #include "Object.h"
 #include "Plane.h"
+#include "Unit.h"
 
 class Cell : public Object {
 public:
@@ -16,6 +17,7 @@ public:
 
 	glm::vec3 pos = { 0, 0, 0 };
 
+	Unit* unit = NULL;
 	Plane square;
 };
 
